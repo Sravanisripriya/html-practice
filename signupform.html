@@ -4,37 +4,48 @@
             h1{
                 text-align: center;
             }
+            #form{
+                background-color:white;
+                padding:20px;
+                width:350px;
+                margin-left: auto;
+                margin-right: auto;
+            
+            }
+            .inp{
+                width:100%
+            }
         </style>
     </head>
-    <body style="background-color: rgb(140, 220, 247);">
+    <body style="background-color: rgb(181, 235, 253);">
         <h1>Signup Form</h1>
-        <form>
-                Username:</br>
-                <input type="text" name="Name"/> </br>
+        <form id="form">
+                <label>Username:</label></br>
+                <input  class="inp" type="text" name="Name" required/> </br>
             
-               Email:</br>
-               <input type="email" name="Email"/></br>
+               <label>Email:</label> </br>
+               <input class="inp"  type="email" name="Email" /></br>
             
-               Password:</br>
-               <input type="password" name="Password"/></br>
+              <label>Password:</label></br>
+               <input class="inp"  type="password" name="Password" required maxlength="8"/></br>
            
-               Confirm Password:</br>
-               <input type="password"  name="Cfn-password"/></br>
+               <label>Confirm Password:</label></br>
+               <input class="inp"  type="password"  name="Cfn-password"/></br>
           
-               Gender:</br>
+              <label> Gender:</label></br>
                <input type="radio" name="gender" value="male"/>Male
                <input type="radio" name="gender" value="female"/>Female
                <input type="radio" name="gender" value="others"/>Others
             <div>
-                Security Question:</br>
-                <select name="security question">
+                <label>Security Question:</label></br>
+                <select class="inp"  name="security question">
                     <option value="pet-name">What is your first name</option>
                     <option value="job">What is your first job</option>
                     <option value="friend">What is your first friend</option>
                 </select>
             </div>
            
-              <textarea name="answer" rows="5" cols="19"></textarea></br>
+              <textarea class="inp"  name="answer" rows="5" cols="19"></textarea></br>
                <input type="checkbox"  name="terms" value="accept"/> I agree to accept the terms and conditions</br>
               <input type='submit' value='Register'/>
           </div>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            #form{
+                background-color: rgb(241, 160, 187);
+                padding: 20px;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .inp{
+                margin:0;
+                margin-bottom: 4px;
+                margin-top: 12px;
+               
+            }
+            .inp-item{
+             width:300px
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;">STUDENT FORM</h2>
+        <form id="form">
+          
+            <p class="inp">NAME:</p>
+           <input class="inp-item" type=text  name="Name" required/>
+
+           <p  class="inp">EMAIL:</p>
+           <input  class="inp-item" type="email" name="Email"/>
+           
+           <p  class="inp">PHONE NUMBER:</p>
+           <input  class="inp-item" type="number" name="NUMBER" required/>
+
+           <p  class="inp">DATE OF BIRTH</p>
+           <input class="inp-item" type="date" name="date"/>
+
+        <!-- A datalist with pre-defined options (connected to an INPUT element) -->
+        <p class="inp">SELECT DOMAIN </p>
+        <input class="inp-item" list="technologies" name='technology' placeholder="Select " />
+        <datalist id="technologies">
+            <option value="5th"/>
+            <option value="6th"/>
+            <option value="7th"/>
+            <option value="8th"/>
+            <option value="9th"/>
+            <option value="10th"/>
+        </datalist> 
+
+        <p  class="inp">MARKSMEMO</p>
+        <input class="inp-item" type="file" name="file" /> </br></br>
+
+        <input type="submit" value="submit"/>
+
+        <input type="reset" value="Reset"/>
+     
+    </form>
+    </body>
+</html>
