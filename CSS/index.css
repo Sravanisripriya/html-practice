@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    color:red;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+p{
+    font-size: 32px;
+    font-weight:700 ;
+    padding: 12px;
+    color:rgb(94, 94, 233);
+    text-align: justify;
+}
+.img{
+    height:300px;
+    width: 300px;
+    padding: 95px;
+
+}

@@ -3,21 +3,42 @@
         <style>
             h1{
                 text-align: center;
+                color:rgb(245, 8, 87);
+                margin-top: 50px;
             }
             #form{
-                background-color:white;
-                padding:20px;
-                width:350px;
+                background-color:rgb(244, 235, 235);
+                padding:30px 30px;
+                width:500px;
+                height: 450px;
                 margin-left: auto;
                 margin-right: auto;
+                border-radius: 10px;
+                color:rgb(130, 1, 130);
+                font-weight: 600px;
             
             }
             .inp{
-                width:100%
+                width:100%;
+                margin:5px 5px;
+                height: 30px;
+            }
+            .sel{
+                color:rgb(130, 1, 130); 
+                width:100%;
+           
+            }
+            #btn{
+                background-color: blue;
+                color: white;
+                margin-top: 8px;
+                border: 0;
+                padding:5px 5px
+
             }
         </style>
     </head>
-    <body style="background-color: rgb(181, 235, 253);">
+    <body style="background-color:white">
         <h1>Signup Form</h1>
         <form id="form">
                 <label>Username:</label></br>
@@ -27,7 +48,7 @@
                <input class="inp"  type="email" name="Email" /></br>
             
               <label>Password:</label></br>
-               <input class="inp"  type="password" name="Password" required maxlength="8"/></br>
+               <input class="inp"  type="password" name="Password" required maxlength="8" required/></br>
            
                <label>Confirm Password:</label></br>
                <input class="inp"  type="password"  name="Cfn-password"/></br>
@@ -36,18 +57,18 @@
                <input type="radio" name="gender" value="male"/>Male
                <input type="radio" name="gender" value="female"/>Female
                <input type="radio" name="gender" value="others"/>Others
-            <div>
+            <div></br>
                 <label>Security Question:</label></br>
-                <select class="inp"  name="security question">
-                    <option value="pet-name">What is your first name</option>
-                    <option value="job">What is your first job</option>
-                    <option value="friend">What is your first friend</option>
+                <select class="sel"  name="security question"></br>
+                    <option  class="sel"  value="pet-name">What is your first name</option>
+                    <option  class="sel"  value="job">What is your first job</option>
+                    <option  class="sel"  value="friend">What is your first friend</option>
                 </select>
             </div>
            
-              <textarea class="inp"  name="answer" rows="5" cols="19"></textarea></br>
+              <textarea class="sel"  name="answer" rows="5" cols="19"></textarea></br>
                <input type="checkbox"  name="terms" value="accept"/> I agree to accept the terms and conditions</br>
-              <input type='submit' value='Register'/>
+              <input  id="btn" type='submit' value='Register'/>
           </div>
     </form>
     </body>
