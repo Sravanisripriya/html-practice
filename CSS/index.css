@@ -13,9 +13,43 @@ p{
     color:rgb(94, 94, 233);
     text-align: justify;
 }
-.img{
-    height:300px;
-    width: 300px;
-    padding: 95px;
-
+.text-section{
+    background-color: white;
+    display: inline-block;
+    width:70%;
+    vertical-align: top; 
+    margin-right: 24px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #aaa;
 }
+.img-section{
+    background-color: white;
+    display: inline-block;
+    width:25%;
+    padding:16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #aaa;
+    
+    
+}
+.place-wrapper img{
+    width:100%; 
+}
+.place-wrapper{
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-bottom: 16px;
+}
+.place-wrapper:last-of-type{
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+@media screen and (max-width:768px){
+    text-section{
+        display: block;
+        width:100%
+    }
+}
+    
+

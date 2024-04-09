@@ -2,11 +2,12 @@
     <head>
         <style>
             #form{
-                background-color: rgb(241, 160, 187);
+                background-color: rgb(30, 163, 220);
                 padding: 20px;
-                width: 350px;
+                width: 500px;
                 margin-left: auto;
                 margin-right: auto;
+                height: 500px;
             }
             .inp{
                 margin:0;
@@ -16,8 +17,37 @@
                
             }
             .inp-item{
-             width:300px
+             width:100%;
+             padding:5px;
+             border-radius: 4px;
             }
+            .btn{
+                background-color: lightblue;
+                border:none;
+                border-radius: 5px;
+                padding:8px 10px;
+                cursor: pointer;
+
+            }
+            .btn:hover{
+                background-color: blue;
+                color:white
+
+            }
+            /* #dis{
+                background-color: green;
+                padding:10px 15px;
+                color:white;
+                cursor: not-allowed;
+                opacity: 0.6;
+            } */
+            .inp-item:focus:required {
+                background-color: rgb(250, 71, 71);
+            }
+            .inp-item:focus {
+                background-color: rgba(204, 241, 245, 0.806);
+            }
+
         </style>
     </head>
     <body>
@@ -51,9 +81,12 @@
         <p  class="inp">MARKSMEMO</p>
         <input class="inp-item" type="file" name="file" /> </br></br>
 
-        <input type="submit" value="submit"/>
+        <input class="btn" type="submit" value="Submit"/>
 
-        <input type="reset" value="Reset"/>
+        <input  class="btn" type="reset" value="Reset"/>
+
+        <!-- <button id="dis">DISABLE</button> -->
+
      
     </form>
     </body>

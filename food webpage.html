@@ -2,8 +2,19 @@
     <head>
         <title>FAV FOOD ITEMS</title>
         <style>
+            body{
+                background-image: url('https://img.freepik.com/premium-photo/raw-organic-vegetables-with-fresh-ingredients-healthily-cooking_197589-714.jpg');
+                  background-repeat: no-repeat;
+            }
+            #heading{
+                color: rgb(168, 18, 18);
+                font-size: 50px;
+                padding-left:24px;
+                text-shadow: 2px 2px 10px rgb(88, 75, 236),2px 4px 2px rgb(12, 222, 47);
+                
+            }
             #topbar{
-                background-color: rgb(168, 82, 248);
+                background-color: rgb(140, 40, 227);
                 padding:20px
             }
             .menu{
@@ -16,12 +27,30 @@
                 height:200px;
                
             }
+            #li-cont{
+                font-size: 26px;
+            }
             .img{
                 text-align: center;
             }
+            .f-link:link{
+               color:blue;
+            }
+            .f-link:visited{
+               color:green
+            }
+            .f-link:hover{
+               color:red
+            }
+            .f-link:active{
+               color:rgb(21, 21, 19)
+            }
+              
+
+          
         </style>
     </head>
-    <body style="margin:0; background-color: rgb(244, 204, 144);">
+    <body style="margin:0; background-color: rgb(255, 226, 183);">
 
         <div id="topbar">
             <span class="menu">Index</span>
@@ -30,14 +59,16 @@
         </div>
 
     
-        <h2 style="padding-left:24px;">Top 5 Favourite Food</h2>
+        <h2 id="heading">Top 5 Favourite Food</h2>
+        <div id="li-cont">
         <ul>
-            <li><a href="#Thali"/> South Indian Thali</a></li>
-            <li><a href="#Biryani"/>Chicken Biryani </a></li>
-            <li><a href="#Pizza"/>Pizaa </a></li>
-            <li><a href="#Icecream"/>Ice Cream </a></li>
-            <li><a href="#Gulabjam"/>Gulab jam </a></li>
+            <li><a class="f-link" href="#Thali"/> South Indian Thali</a></li>
+            <li><a class="f-link" href="#Biryani"/>Chicken Biryani </a></li>
+            <li><a class="f-link" href="#Pizza"/>Pizaa </a></li>
+            <li><a class="f-link" href="#Icecream"/>Ice Cream </a></li>
+            <li><a class="f-link" href="#Gulabjam"/>Gulab jam </a></li>
         </ul>
+    </div>
     
         <div class="img">
             <img id="Thali" class="food-image" src="https://imgmedia.lbb.in/media/2019/06/5cf5fa110f91d91bef79433c_1559624209011.jpg" />
